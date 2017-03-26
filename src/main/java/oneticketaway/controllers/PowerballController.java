@@ -19,10 +19,7 @@ public class PowerballController {
 
     @RequestMapping("/powerball")
     public Powerball[] getNumbers() throws MalformedURLException {
-        Powerball[] pb = null;
-
-       pb = _contentMigrationService.getAllPowerballNumbers();
-
+        Powerball[] pb = _contentMigrationService.getAllPowerballNumbers();
        return pb;
     }
 }
