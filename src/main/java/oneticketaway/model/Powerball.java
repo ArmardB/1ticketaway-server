@@ -3,14 +3,13 @@ package oneticketaway.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * Created by administrator on 3/25/17.
+ * Created by administrator on 3/26/17.
  */
-public class MegaMillions {
+public class Powerball {
 
     private String _drawDate;
     private String _winningNumbers;
-    private String _megaBall;
-    private String _multiplier;
+    private String _multiplyer;
 
     @JsonProperty("draw_date")
     public String getDrawDate() {
@@ -30,22 +29,12 @@ public class MegaMillions {
         _winningNumbers = winningNumbers;
     }
 
-    @JsonProperty("mega_ball")
-    public String getMegaBall() {
-        return _megaBall;
-    }
-
-    public void setMegaBall(String megaBall) {
-        _megaBall = megaBall;
-    }
-
     @JsonProperty("multiplier")
-    public String getMultiplier() {
-        return _multiplier;
+    public String getMultiplyer() {
+        return _multiplyer;
     }
 
-    public void setMultiplier(String multiplier) {
-        _multiplier = multiplier;
+    public void setMultiplyer(String multiplyer) {
+        _multiplyer = multiplyer;
     }
-
 }
